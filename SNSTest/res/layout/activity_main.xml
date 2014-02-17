@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+	        android:id="@+id/email"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:hint="이메일 주소"
+	        android:inputType="textEmailAddress"
+	        android:gravity="center" />
+    
+    <EditText
+	        android:id="@+id/passwd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:hint="비밀번호"
+	        android:inputType="textPassword"
+	        android:gravity="center" />
+    
+    <Button
+	        android:id="@+id/loginBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="로그인"
+	        android:gravity="center" />
+    
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingTop="30dp"
+	    android:layout_gravity="center_horizontal" >
+        
+        <Button
+	        android:id="@+id/findpwBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="비밀번호찾기"
+	        android:gravity="center"
+	        android:layout_weight="1" />
+    
+ 	   <Button
+	        android:id="@+id/joinBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="회원가입"
+	        android:gravity="center"
+	        android:layout_weight="1" />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>
