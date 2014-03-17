@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/menubar"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            
+            <ImageButton 
+                android:id="@+id/alarmBtn"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/alarm" />
+        
+        </RelativeLayout>
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            
+            <ImageButton 
+                android:id="@+id/friendBtn"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/friend" />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            
+            <ImageButton 
+                android:id="@+id/contextListBtn"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/list" />
+        
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            
+            <ImageButton 
+                android:id="@+id/postBtn"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/post" />
+        
+        </RelativeLayout>  
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:layout_marginTop="20dp" >
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <!--  ImageView /-->
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true" >
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="거리" />
+            	<TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성자이름" />
+                
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout 
+	    	android:layout_width="290dp"
+	        android:layout_height="2dp"
+	        android:orientation="vertical"
+	        android:background="#ff33ffff"
+	        android:layout_gravity="center" >
+    	</LinearLayout>
+    	
+        <EditText
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="start"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="15dp"
+	        android:background="@null"
+	        android:hint="본문" />
+        
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/postfunc"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            
+            <ImageButton 
+                android:id="@+id/friendTag"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/tagfriend" />
+        
+        </RelativeLayout>
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            
+            <ImageButton 
+                android:id="@+id/pictureTag"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/tagpicture" />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            
+            <ImageButton 
+                android:id="@+id/emoTag"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/tagemo" />
+        
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            
+            <ImageButton 
+                android:id="@+id/permTag"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/tagperm" />
+        
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            
+            <ImageButton 
+                android:id="@+id/folderTag"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/tagfolder" />
+        
+        </RelativeLayout> 
+        
+    </LinearLayout>
+    
+    <fragment
+        android:id="@+id/mapview"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
